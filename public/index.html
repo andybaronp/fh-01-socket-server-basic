@@ -70,10 +70,9 @@
     });
 
 
-    const socket = io('http://localhost:3002')
+    const socket = io('http://localhost:3003')
 
     socket.on('messages', (data) => {
-      console.log(data);
       const li = document.createElement('li');
       li.innerText = data;
       messages.appendChild(li);
