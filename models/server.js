@@ -9,7 +9,7 @@ class Server {
 
   constructor() {
     this.app = express();
-    this.port = 3003
+    this.port = process.env.PORT;
 
 
     //http server
