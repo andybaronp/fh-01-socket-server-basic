@@ -69,8 +69,8 @@
       socket.emit('message-to-server', message);
     });
 
-
-    const socket = io('https://fh-01-socket-server-basic-dev-zmhb.3.us-1.fl0.io/')
+    // add url to socket
+    const socket = io(' ')
 
     socket.on('messages', (data) => {
       const li = document.createElement('li');
